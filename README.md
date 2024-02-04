@@ -9,8 +9,6 @@ if game:GetService("Players").localPlayer.Data.Stats.Melee.Level.Value and game:
         pcall(function()
             if game:GetService("Players").localPlayer.Data.Stats.Melee.Level.Value ~= 2550 then
                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",_G.PointStats)
-                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Refund","1")
-                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Refund","2")
                 end
         end)
     end
@@ -20,8 +18,6 @@ spawn(function()
          pcall(function()
             if game:GetService("Players").localPlayer.Data.Stats.Defense.Level.Value ~= 2550 then
                      game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Defense",_G.PointStats)
-                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Refund","1")
-                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Refund","2")
                  end
          end)
      end
@@ -39,3 +35,4 @@ spawn(function()
      end
  end)
 end
+
