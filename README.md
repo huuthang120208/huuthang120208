@@ -1,10 +1,8 @@
-
 repeat task.wait() until game:IsLoaded()
 if not game:IsLoaded() then game:IsLoaded():Wait(5) end
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
 
-Initialize()
 local decalsyeeted = true
 local g = game
 local w = g.Workspace
@@ -19,7 +17,7 @@ t.WaterTransparency = 0
 l.GlobalShadows = 0
 l.FogEnd = 9e9
 l.Brightness = 0
-settings().Rendering.QualityLevel = "Level10"
+settings().Rendering.QualityLevel = 10;
 for i, v in pairs(w:GetDescendants()) do
     if v:IsA("BasePart") and not v:IsA("MeshPart") then
         v.Material = "Plastic"
@@ -36,7 +34,7 @@ for i, v in pairs(w:GetDescendants()) do
     elseif v:IsA("MeshPart") and decalsyeeted then
         v.Material = "Plastic"
         v.Reflectance = 0
-        v.TextureID = 10385902758728957
+        v.TextureID = 10385902 758728957
     elseif v:IsA("SpecialMesh") and decalsyeeted  then
         v.TextureId=0
     elseif v:IsA("ShirtGraphic") and decalsyeeted then
