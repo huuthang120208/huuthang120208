@@ -5,7 +5,7 @@ repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
 repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
 UserSettings():GetService('UserGameSettings').MasterVolume = 0;
 settings().Rendering.QualityLevel = 1;
-game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false) -- false xóa chat , true bật chat
+game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,true) -- false xóa chat , true bật chat
 game:GetService("Lighting").GlobalShadows = false
 for key, object in pairs(workspace:GetDescendants()) do
     if object:IsA("Part") or object:IsA("UnionOperation") or object:IsA("MeshPart") then
