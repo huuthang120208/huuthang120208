@@ -5,7 +5,7 @@ repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
 repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
 UserSettings():GetService('UserGameSettings').MasterVolume = 0;
 settings().Rendering.QualityLevel = 1;
-game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,true) -- false xóa chat , true bật chat
+game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false) -- false xóa chat , true bật chat
 game:GetService("Lighting").GlobalShadows = false
 for key, object in pairs(workspace:GetDescendants()) do
     if object:IsA("Part") or object:IsA("UnionOperation") or object:IsA("MeshPart") then
@@ -22,7 +22,7 @@ if not game:IsLoaded() then game:IsLoaded():Wait(5) end
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
 local decalsyeeted = true
-game:GetService("RunService"):Set3dRenderingEnabled(true) -- true để mở whitescreen / fale tắt
+game:GetService("RunService"):Set3dRenderingEnabled(false) -- true để mở whitescreen / fale tắt
 local g = game
 local w = g.Workspace
 local l = g.Lighting
