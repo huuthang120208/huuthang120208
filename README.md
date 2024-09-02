@@ -23,7 +23,7 @@ if not game:IsLoaded() then game:IsLoaded():Wait(5) end
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
 local decalsyeeted = true
-game:GetService("RunService"):Set3dRenderingEnabled(false) -- true để mở whitescreen / fale tắt
+game:GetService("RunService"):Set3dRenderingEnabled(true) -- true để mở whitescreen / fale tắt
 local g = game
 local w = g.Workspace
 local l = g.Lighting
