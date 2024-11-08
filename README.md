@@ -8,7 +8,7 @@ repeat
     task.wait()
 until game.Players.LocalPlayer
 wait(5)
-LoadedUiHub = false
+LoadedUiHub = true
 local b = syn and syn.request or identifyexecutor() == "Fluxus" and request or http_request or requests
 local d =
     b(
