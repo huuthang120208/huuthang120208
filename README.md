@@ -1,4 +1,4 @@
-repeat
+[repeat
     task.wait()
 until game:IsLoaded()
 repeat
@@ -9539,3 +9539,4 @@ if AutoPoleV1_Toggle and PoleV1ed then
 end
 LoadedUiHub = true
 z:Init()
+](https://raw.githubusercontent.com/shlexware/Orion/main/source)
