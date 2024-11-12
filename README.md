@@ -321,7 +321,7 @@ elseif y == 4442272183 then
 elseif y == 7449423635 then
     Sea3 = true
 end
-local z = loadstring(game:HttpGet("https://raw.githubusercontent.com/DichVuSpace/FunctionScriptTemp/main/Library/OrionLibrary"))()
+local z = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 function MoonTextureId()
     if Sea1 then
         return game:GetService("Lighting").FantasySky.MoonTextureId
