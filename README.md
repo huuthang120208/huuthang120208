@@ -40,7 +40,9 @@ function CheckRace()
     local race = game.Players.LocalPlayer.Data.Race.Value
 
     if game.Players.LocalPlayer.Character:FindFirstChild("RaceTransformed") then
-        local raceInfo = race .. " V4"
+        -- Kiểm tra trạng thái của V4
+        local v4Status = game.ReplicatedStorage.Remotes.CommF_:InvokeServer("UpgradeRace", "Check")
+        local raceInfo = race .. " V4 (Trạng thái: " .. tostring(v4Status) .. ")"
         SendToWebhook(
             "https://discord.com/api/webhooks/1312650928821768212/5nx2ScEE--inMxNOrk2RpAKsPKGR8YCLdrkN8C7JZT6xQkGfHmUQTY7hz1ftLeeepwqW",
             "Tên người chơi: " .. playerName .. "\nThông tin: " .. raceInfo
